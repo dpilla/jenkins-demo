@@ -36,7 +36,7 @@
                 <archive>
                     <manifest>
                         <addClasspath>true</addClasspath>
-                        <mainClass>com.example.JenkinsTest</mainClass> <!-- Replace with your main class -->
+                        <mainClass>com.demo.JenkinsTest</mainClass> <!-- Replace with your main class -->
                     </manifest>
                 </archive>
             </configuration>
