@@ -25,13 +25,23 @@
     </dependencies>
 
     <build>
-        <plugins>
-            <!-- Maven Surefire Plugin for running tests -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.1.2</version>
-            </plugin>
-        </plugins>
-    </build>
+    <plugins>
+        <!-- Other plugins if any -->
+
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>3.3.0</version> <!-- or any recent version -->
+            <configuration>
+                <archive>
+                    <manifest>
+                        <addClasspath>true</addClasspath>
+                        <mainClass>com.example.JenkinsTest</mainClass> <!-- Replace with your main class -->
+                    </manifest>
+                </archive>
+            </configuration>
+        </plugin>
+
+    </plugins>
+</build>
 </project>
