@@ -27,6 +27,6 @@ public class HelloWorldTest {
     public void testSayHelloTest2() {
         JenkinsTest hw = new JenkinsTest();
         String result = hw.sayHello();
-        assertEquals("Hello, World!", result);
+        assertEquals("Hello, World2!", result);
     }
 }
