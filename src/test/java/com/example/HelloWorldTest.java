@@ -22,4 +22,11 @@ public class HelloWorldTest {
         String result = hw.sayHello();
         assertEquals("Hello, World!", result);
     }
+    
+    @Test
+    public void testSayHelloTest2() {
+        JenkinsTest hw = new JenkinsTest();
+        String result = hw.sayHello();
+        assertEquals("Hello, World!", result);
+    }
 }
